@@ -142,9 +142,9 @@ const Recipe = ({ location, match }) => {
                 <div className="row" style={{ height: '40%' }}>
                   <div className="col">
                     <h3>Ingredients</h3>
-                    <ul className="list-group">
-                      {ingredients.map((ingredient, index) => (<li className="list-group-item" key={index}><span>{ingredient}</span></li>))}
-                    </ul>
+                    <div className="row">
+                      {ingredients.map((ingredient, index) => (<div className="col-md-4 col-lg-4 col-xl-4 d-none d-sm-none d-md-block d-lg-block d-xl-block" key={index}><span>{ingredient}</span></div>))}
+                    </div>
                   </div>
                 </div>
                 <div className="row" style={{ height: '50%' }}>
