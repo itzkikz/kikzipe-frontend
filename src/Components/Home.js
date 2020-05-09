@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, Redirect } from 'react-router-dom';
-import Animation from './Animation';
+// import Animation from './Animation';
 import { getCategories } from '../Services/ApiCalls';
 import './styles.min.css';
 
@@ -101,7 +101,7 @@ const Home = () => {
           className="col-md-7 col-lg-7 col-xl-7 text-truncate d-none d-sm-none d-md-block d-lg-block d-xl-block"
           style={{ padding: '0px', backgroundColor: '#F1FAEE' }}
         >
-          <Animation />
+          {/* <Animation /> */}
         </div>
       </div>
       {performRedirect()}
