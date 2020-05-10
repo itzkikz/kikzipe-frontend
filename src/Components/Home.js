@@ -67,7 +67,7 @@ const Home = () => {
           }}
         >
           <div className="d-flex flex-column" style={{ width: '50%' }}>
-            <select className="form-control kikzipe-font" onChange={handleChange()}>
+            <select className="form-control" onChange={handleChange()}>
               <option value="">Select a category</option>
               {categories.map((category) => (
                 <option key={category._id} value={category._id}>
@@ -78,7 +78,7 @@ const Home = () => {
             <button
               type="button"
               onClick={checkCategory}
-              className="btn kikzipe-font"
+              className="btn"
               style={{ marginTop: '10px', backgroundColor: '#457b9d', color: 'white' }}
             >
               Get Recipe
@@ -107,7 +107,7 @@ const Home = () => {
       {performRedirect()}
       <footer className="footer bg-dark">
         <div className="container">
-          <span className="text-white kikzipe-font">
+          <span className="text-white">
             Resources Used
             <Link to="/resources"> Click Here</Link>
           </span>
