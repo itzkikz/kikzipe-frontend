@@ -16,7 +16,7 @@
   "scripts": {
     "analyze": "source-map-explorer 'build/static/js/*.js'",
     "start": "react-scripts start",
-    "build": "GENERATE_SOURCEMAP=false react-scripts build",
+    "build": "GENERATE_SOURCEMAP=false react-scripts build && gzipper --verbose ./build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
