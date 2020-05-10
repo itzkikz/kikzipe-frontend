@@ -61,7 +61,7 @@ const Recipe = ({ location, match }) => {
               </select>
               <Link
                 to="/"
-                className="btn kikzipe-font"
+                className="btn"
                 style={{ marginTop: '10px', backgroundColor: '#457b9d', color: 'white' }}
               >
                 Reset
@@ -108,7 +108,7 @@ const Recipe = ({ location, match }) => {
                   </div>
                 </div>
                 <div className="row" style={{ margin: '0px', marginTop: '5px' }}>
-                  <div className="col d-flex justify-content-between align-items-center kikzipe-font" style={{ width: '100%' }}>
+                  <div className="col d-flex justify-content-between align-items-center" style={{ width: '100%' }}>
                     <div style={{ width: '85%' }}>
                       <h5>Prepration Time</h5>
                       <h6>{info.preparation_time}</h6>
@@ -137,7 +137,7 @@ const Recipe = ({ location, match }) => {
                   </div>
                 </div>
               </div>
-              <div className="col-9 kikzipe-font" style={{ height: '100%' }}>
+              <div className="col-9" style={{ height: '100%' }}>
                 <h2>Dish Name</h2>
                 <div className="row" style={{ height: '40%' }}>
                   <div className="col">
