@@ -31,8 +31,6 @@ const Resources = () => (
         </li>
       </ul>
     </p>
-    <h3>Data</h3>
-    <p><ul><li><a href="https://www.safefood.eu/recipes/101-Square-Meals-(PDF).aspx">101 Square Meals</a></li></ul></p>
   </div>
 );
 
