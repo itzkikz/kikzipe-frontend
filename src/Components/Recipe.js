@@ -73,19 +73,27 @@ const Recipe = ({ location, match }) => {
             </div>
             <div className="d-block d-sm-block d-md-none d-lg-none d-xl-none">
               <img className="img-thumbnail img-fluid" src="/assets/img/image--999.jpg" alt="" width="100%" />
-              <h1 className="text-center">Dish Name</h1>
+              <h1 className="text-center">{info.name}</h1>
               <div>
                 <Tabs>
                   <TabList>
-                    <Tab>Title 1</Tab>
-                    <Tab>Title 2</Tab>
+                    <Tab>Ingredients</Tab>
+                    <Tab>Methods</Tab>
                   </TabList>
 
                   <TabPanel>
-                    <h2>Any content 1</h2>
+                  <ul className="list-group m-3">
+                      {ingredients.map((ingredient, index) =>(
+                        <li className="list-group-item" key={index}><span>{ingredient}</span></li>
+                      ))}
+                    </ul>
                   </TabPanel>
                   <TabPanel>
-                    <h2>Any content 2</h2>
+                  <ul className="list-group m-3">
+                      {methods.map((method, index) => (
+                        <li className="list-group-item" key={index}><span>{method}</span></li>
+                      ))}
+                    </ul>
                   </TabPanel>
                 </Tabs>
               </div>
